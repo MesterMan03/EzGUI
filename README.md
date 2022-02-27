@@ -3,4 +3,4 @@
 
 Minecraft version: 1.16+
 
-Full YouTube video on how to use it coming soon...
+YouTube video on how to use it: https://youtu.be/5EBptAFCQlU
