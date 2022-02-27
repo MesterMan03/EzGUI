@@ -1,0 +1,29 @@
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "player": {
+                "looking_at": {
+                    "type": "minecraft:armor_stand",
+                    "nbt": "{Tags:[\"base\"]}",
+                    "distance": {
+                        "absolute": {
+                            "max": 3.0,
+                            "min": 0.1
+                        }
+                    }
+                }
+            },
+            "flags": {
+                "is_sneaking": false
+            }
+        }
+    }, {
+        "condition": "inverted",
+        "term": {
+            "condition": "reference",
+            "name": "gui:ineditor"
+        }
+    }
+]

@@ -1,0 +1,30 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "leftclick": {
+                    "min": 1
+                }
+            }
+        }, {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "rightclick": {
+                    "min": 1
+                }
+            }
+        }, {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "shiftclick": {
+                    "min": 1
+                }
+            }
+        }
+    ]
+}

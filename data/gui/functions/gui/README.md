@@ -1,0 +1,1 @@
+# This section of the datapack is only for managing guis (spawning, deleting, teleporting, etc.)

@@ -1,0 +1,13 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "gui:seesbase"
+        },
+        {
+            "condition": "reference",
+            "name": "gui:seesgui"
+        }
+    ]
+}
