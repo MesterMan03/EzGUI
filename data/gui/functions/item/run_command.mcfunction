@@ -1,4 +1,13 @@
 # Executes as: player, at: gui(!)
-# the gui (if you need to access it): @e[tag=selectedgui,limit=1]
-# Remember: left, right and shift clicks all have different command ids, but you can assign multiple click "types" to one item!
+# The gui (if you need to access it): @e[tag=selectedgui,limit=1]
+# If you run a returnitem command, the full nbt for the item: gui:pages TempItem
+# Example command to get its data: data get storage gui:pages TempItem
+# Remember: click types all have different command ids, but you can assign multiple click "types" to one item!
 # Basic command: execute if score #command_to_run constant matches x run **anything you want here**
+
+#-# my commands used to test the pack
+execute if score #TEST_MODE constant matches 1 run function gui:item/run_command_test
+#-#
+
+# Kill itemcheck, so the item check functions don't continue
+kill @e[tag=itemcheck]

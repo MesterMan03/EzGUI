@@ -9,6 +9,7 @@ data modify entity @e[tag=temp,limit=1] Owner set from entity @s UUID
 execute if score @s leftclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.leftclick int 1 run scoreboard players get @s leftclick
 execute if score @s rightclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.rightclick int 1 run scoreboard players get @s rightclick
 execute if score @s shiftclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.shiftclick int 1 run scoreboard players get @s shiftclick
+execute if score @s returnclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.returnclick int 1 run scoreboard players get @s returnclick
 
 # Minecraft is stupid
 tp @e[tag=temp] ~ ~.1 ~

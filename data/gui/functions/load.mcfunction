@@ -9,8 +9,10 @@ scoreboard objectives add openeditor trigger
 scoreboard objectives add leftclick trigger
 scoreboard objectives add rightclick trigger
 scoreboard objectives add shiftclick trigger
+scoreboard objectives add returnclick trigger
 
 function gui:reset_all
+function gui:reset_triggers
 
 # Set the tick delay between old gui teleports here
 scoreboard players set #teleport_delay constant 3
