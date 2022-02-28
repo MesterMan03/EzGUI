@@ -1,3 +1,6 @@
+# Run return_item when a player clicks in gui with an item that doesn't have GUIItem
+execute unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
+
 # Get the original and "real" count of the item for extra checks
 execute store result score #original_count constant run data get storage gui:pages ActualItem.Count
 execute store result score #real_count constant run data get storage gui:pages TempItem.Count
