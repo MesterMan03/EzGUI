@@ -1,6 +1,13 @@
 function gui:tellraw_line
 tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "1.1","color": "green"},"\n"]
 
+#1.1.1 Multiplayer
+tellraw @s {"text": "1.1.1 Multiplayer","color": "gold"}
+tellraw @s ["- ",{"text": "Added better multiplayer support:","color": "dark_green"}," ",{"text": "less bugs, less glitches, better user experience!","color": "gray"}]
+tellraw @s ["- ",{"text": "Added impostor detection:","color": "dark_green"}," ",{"text": "now players can't access other player's gui!","color": "gray"}]
+
+tellraw @s ""
+
 #1.1
 tellraw @s {"text": "1.1","color": "gold"}
 tellraw @s ["- ",{"text": "Added return clicks:","color": "dark_green"}," ",{"text": "now you can make commands which will trigger when a player puts any item in a gui slot.","color": "gray"}]

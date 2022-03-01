@@ -14,8 +14,5 @@ execute if entity @e[tag=selectedgui,tag=ready] run function gui:item/check_clic
 # Fill up items after every item check has been done
 execute as @e[tag=selectedgui] run function gui:item/load_items
 
-# Simple shit
-function gui:item/killitems
-
 # Add the "ready" tag to guis, so the check function doesn't fire when we just spawned the chest minecart (first tick bug)
 tag @e[tag=gui,tag=!ready] add ready

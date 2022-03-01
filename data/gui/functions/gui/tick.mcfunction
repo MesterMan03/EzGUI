@@ -14,8 +14,9 @@ execute as @a[tag=!openedGUI,gamemode=!spectator,nbt={OnGround:1b},tag=seesbase]
 team join nopush @e[tag=gui,tag=new]
 tag @e[tag=gui,tag=new] remove new
 
-# Check for players who opened the GUI
-execute as @a[advancements={gui:opened_gui=true},gamemode=!spectator,tag=!openedGUI] at @s run function gui:gui/guiinteraction/open
+# Check for players who opened the GUI + also check for impostors
+execute as @a[tag=impostor] at @s rotated as @s run function gui:gui/guiinteraction/impostor_done
+execute as @a[advancements={gui:opened_gui=true},gamemode=!spectator,tag=!openedGUI] at @s run function gui:gui/guiinteraction/open_check
 
 # Assign type value
 execute as @e[tag=gui,tag=openedGUI] at @s store result score @s guiType run scoreboard players get @e[tag=base,sort=nearest,limit=1] guiType

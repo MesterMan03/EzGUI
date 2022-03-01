@@ -23,6 +23,7 @@ execute if score #raycast_temp constant matches 2 if score @s constant matches 2
 execute if score #raycast_temp constant matches 2 run kill @e[tag=raycast]
 
 # Otherwise
+execute as @e[tag=raycast,limit=1] at @s run tp @s ^ ^ ^-0.5
 execute at @e[tag=raycast,limit=1] run tp @e[tag=selected] ~ ~ ~
 execute as @e[tag=selected] at @s run tp @s ~ ~.5 ~
 
