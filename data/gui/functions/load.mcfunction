@@ -10,6 +10,8 @@ scoreboard objectives add leftclick trigger
 scoreboard objectives add rightclick trigger
 scoreboard objectives add shiftclick trigger
 scoreboard objectives add returnclick trigger
+scoreboard objectives add dropclick trigger
+scoreboard objectives add dropstackclick trigger
 
 function gui:reset_all
 function gui:reset_triggers

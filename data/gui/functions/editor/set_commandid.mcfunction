@@ -10,6 +10,8 @@ execute if score @s leftclick matches 1.. store result entity @e[tag=temp,limit=
 execute if score @s rightclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.rightclick int 1 run scoreboard players get @s rightclick
 execute if score @s shiftclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.shiftclick int 1 run scoreboard players get @s shiftclick
 execute if score @s returnclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.returnclick int 1 run scoreboard players get @s returnclick
+execute if score @s dropclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.dropclick int 1 run scoreboard players get @s dropclick
+execute if score @s dropstackclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.dropstackclick int 1 run scoreboard players get @s dropstackclick
 
 # Minecraft is stupid
 tp @e[tag=temp] ~ ~.1 ~

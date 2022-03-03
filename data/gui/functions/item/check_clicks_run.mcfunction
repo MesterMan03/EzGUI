@@ -29,3 +29,5 @@ execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/23
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/24
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/25
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/26
+
+scoreboard players set #can_check_clicks constant 0

@@ -11,7 +11,7 @@ execute as @e[tag=itemcheck] run function gui:item/load_items
 data remove storage gui:pages TempItem
 data remove storage gui:pages ActualItem
 
-# Start the magic
+# Start the m a g i c
 
 # - precheck to see if anything has changed
 data modify storage gui:pages ActualPage set from entity @e[tag=itemcheck,limit=1] Items
