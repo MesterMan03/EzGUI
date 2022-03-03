@@ -1,5 +1,13 @@
 function gui:tellraw_line
-tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "1.1","color": "green"},"\n"]
+tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "1.2","color": "green"},"\n"]
+
+#1.2
+tellraw @s {"text": "1.2","color": "gold"}
+tellraw @s ["- ",{"text": "Added drop clicks:","color": "dark_green"}," ",{"text": "they fire when the player throws out either one item or the whole stack.","color": "gray"}]
+tellraw @s ["- ",{"text": "Completely rewrote the click detection functions:","color": "dark_green"}," ",{"text": "the logic is still somewhat the same, but it's way, WAY more optimized now!","color": "gray"}]
+tellraw @s ["- ",{"text": "Lot of bug fixes:","color": "dark_green"}," ",{"text": "you don't have to think about big bugs, JUST LITERALLY A DEBUG FUNCTION THAT I LEFT IN THE CODE... (plus other good stuff :p)","color": "gray"}]
+
+tellraw @s ""
 
 #1.1.1 Multiplayer
 tellraw @s {"text": "1.1.1 Multiplayer","color": "gold"}

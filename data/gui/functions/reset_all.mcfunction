@@ -8,6 +8,8 @@ scoreboard players reset @a shiftclick
 
 scoreboard players set #curr_id id 0
 
+scoreboard players set #can_check_clicks constant 0
+
 tag @e remove openedGUI
 tag @e remove ready
 

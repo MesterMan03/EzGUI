@@ -2,7 +2,11 @@ scoreboard players reset @a leftclick
 scoreboard players reset @a rightclick
 scoreboard players reset @a shiftclick
 scoreboard players reset @a returnclick
+scoreboard players reset @a dropclick
+scoreboard players reset @a dropstackclick
 scoreboard players enable @a[tag=editoropen] leftclick
 scoreboard players enable @a[tag=editoropen] rightclick
 scoreboard players enable @a[tag=editoropen] shiftclick
 scoreboard players enable @a[tag=editoropen] returnclick
+scoreboard players enable @a[tag=editoropen] dropclick
+scoreboard players enable @a[tag=editoropen] dropstackclick
