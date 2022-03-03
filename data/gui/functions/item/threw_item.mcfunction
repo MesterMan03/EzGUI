@@ -1,7 +1,7 @@
 # executes as, at: player
 # executes when player threw an item out of the GUI
 # item: @e[tag=threwitem]
-# if you want to access the item a better way: storage gui:pages ActualItem
+# if you want to access the item in a better way: storage gui:pages ActualItem
 
 # if we throw a whole stack, there won't be TempItem
 execute unless data storage gui:pages TempItem run function gui:item/clicks/dropstack
@@ -13,3 +13,4 @@ execute if data storage gui:pages TempItem run function gui:item/clicks/drop
 data remove storage gui:pages ActualItem
 data remove storage gui:pages TempItem
 kill @e[tag=threwitem]
+kill @e[tag=itemcheck]

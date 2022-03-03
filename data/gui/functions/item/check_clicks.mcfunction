@@ -12,8 +12,8 @@ data remove storage gui:pages TempItem
 data remove storage gui:pages ActualItem
 
 # Start the m a g i c
-
 # - precheck to see if anything has changed
+scoreboard players set #can_check_clicks constant 0
 data modify storage gui:pages ActualPage set from entity @e[tag=itemcheck,limit=1] Items
 data modify storage gui:pages TempPage set from entity @e[tag=selectedgui,limit=1] Items
 execute store success score #can_check_clicks constant run data modify storage gui:pages TempPage set from storage gui:pages ActualPage
