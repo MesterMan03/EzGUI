@@ -1,5 +1,3 @@
-tellraw @a {"nbt":"TempItem","storage": "gui:pages"}
-
 # Check if we have a command id to run
 execute if data storage gui:pages ActualItem.tag.gui.returnclick run function gui:item/clicks/return
 

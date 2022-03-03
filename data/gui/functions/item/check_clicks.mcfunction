@@ -12,7 +12,18 @@ data remove storage gui:pages TempItem
 data remove storage gui:pages ActualItem
 
 # Start the magic
-function gui:item/check_clicks_run
+
+# - precheck to see if anything has changed
+data modify storage gui:pages ActualPage set from entity @e[tag=itemcheck,limit=1] Items
+data modify storage gui:pages TempPage set from entity @e[tag=selectedgui,limit=1] Items
+execute store success score #can_check_clicks constant run data modify storage gui:pages TempPage set from storage gui:pages ActualPage
+
+# - the idea is that we first check if anything has changed, cutting downn the number of functions to check by a lot
+execute if score #can_check_clicks constant matches 1 run function gui:item/check_clicks_run
+
+# - post-reset
+data remove storage gui:pages ActualPage
+data remove storage gui:pages TempPage
 
 # Reset
 kill @e[tag=itemcheck]

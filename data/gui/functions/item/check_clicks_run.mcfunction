@@ -1,137 +1,31 @@
-# This is not pretty, and I'm extremely sorry
-# Generated via python, btw
+# here we only run one single line of code IF itemcheck is still alive (gui:item/run_commands kills it, so that's how we know we ran something)
+# because we only run one single line instead of brute-forcing every slot in one giant function, we run overall WAY less commands
 
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:0b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:0b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:1b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:1b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:2b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:2b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:3b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:3b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:4b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:4b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:5b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:5b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:6b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:6b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:7b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:7b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:8b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:8b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:9b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:9b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:10b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:10b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:11b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:11b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:12b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:12b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:13b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:13b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:14b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:14b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:15b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:15b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:16b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:16b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:17b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:17b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:18b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:18b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:19b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:19b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:20b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:20b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:21b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:21b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:22b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:22b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:23b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:23b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:24b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:24b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:25b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:25b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
-
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages TempItem set from entity @e[tag=selectedgui,limit=1] Items[{Slot:26b}]
-execute if entity @e[tag=itemcheck,limit=1] run data modify storage gui:pages ActualItem set from entity @e[tag=itemcheck,limit=1] Items[{Slot:26b}]
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages TempItem unless data storage gui:pages TempItem.tag.GUIItem run function gui:item/return_item
-execute if entity @e[tag=itemcheck,limit=1] if data storage gui:pages ActualItem run function gui:item/check_clicks_slot
+# oh and, generated via python, ofc ;)
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/0
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/1
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/2
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/3
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/4
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/5
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/6
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/7
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/8
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/9
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/10
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/11
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/12
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/13
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/14
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/15
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/16
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/17
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/18
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/19
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/20
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/21
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/22
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/23
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/24
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/25
+execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/26
