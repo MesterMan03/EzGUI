@@ -9,3 +9,6 @@ scoreboard players reset #editor_type constant
 
 # Remove editoropen tag
 tag @s remove editoropen
+
+# Reset triggers
+function gui:reset_triggers

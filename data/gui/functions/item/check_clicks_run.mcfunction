@@ -1,6 +1,5 @@
 # here we only run one single line of code IF itemcheck is still alive (gui:item/run_commands kills it, so that's how we know we ran something)
-# because we only run one single line instead of brute-forcing every slot in one giant function, we overall run WAY less commands
-
+# because we only run one single line instead of brute-forcing every slot in one giant function, we run overall WAY less commands
 # oh and, generated via python, ofc ;)
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/0
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/1
@@ -29,3 +28,5 @@ execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/23
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/24
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/25
 execute if entity @e[tag=itemcheck,limit=1] run function gui:item/slots/26
+
+scoreboard players set #can_check_clicks constant 0

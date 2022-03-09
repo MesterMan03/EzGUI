@@ -1,6 +1,5 @@
 # Reset some stuff
 
-
 # Check for somebody who used /trigger openeditor
 scoreboard players enable @a openeditor
 execute as @a[scores={openeditor=1}] run function gui:editor/open/start
@@ -15,6 +14,3 @@ execute as @a[tag=editoropen] at @s if data entity @s SelectedItem unless data e
 # Check for setting the command id
 # - Run the actual function
 execute as @a[tag=editoropen] at @s if predicate gui:ran_command_editor if data entity @s SelectedItem run function gui:editor/set_commandid
-
-# - Reset
-function gui:reset_triggers

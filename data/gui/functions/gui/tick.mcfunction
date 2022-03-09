@@ -1,3 +1,6 @@
+# Check for newly placed bases
+execute as @e[type=armor_stand,tag=base] unless score @s id matches -2147483648..2147483647 run function gui:generatenewid
+
 # Check if player looks at base
 tag @a remove seesbase
 execute as @a[gamemode=!spectator] at @s if predicate gui:seesbase run tag @s add seesbase

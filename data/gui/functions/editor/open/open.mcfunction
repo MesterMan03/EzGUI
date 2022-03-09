@@ -13,5 +13,8 @@ tag @s add editoropen
 # Delete editor marker
 kill @e[tag=editormarker]
 
+# Reset triggers
+function gui:reset_triggers
+
 # Display infos
 function gui:editor/display_infos

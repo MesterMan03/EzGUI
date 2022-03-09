@@ -9,7 +9,7 @@
                     "nbt": "{Tags:[\"base\"]}",
                     "distance": {
                         "absolute": {
-                            "max": 3.0,
+                            "max": 3.2,
                             "min": 0.1
                         }
                     }

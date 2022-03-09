@@ -8,7 +8,7 @@ execute positioned 0 0 0 run summon chest_minecart ~ ~ ~ {CustomDisplayTile:1b,D
 execute as @e[tag=itemcheck] run function gui:item/load_items
 
 # The click check should reset these, but just in case
-data remove storage gui:pages TempItem
+data remove storage gui:pages SlotItem
 data remove storage gui:pages ActualItem
 
 # Start the m a g i c

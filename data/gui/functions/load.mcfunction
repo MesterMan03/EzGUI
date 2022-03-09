@@ -12,8 +12,9 @@ scoreboard objectives add shiftclick trigger
 scoreboard objectives add returnclick trigger
 scoreboard objectives add dropclick trigger
 scoreboard objectives add dropstackclick trigger
+scoreboard objectives add anyclick trigger
 
-function gui:reset_all
+function gui:reset_scores_tags
 function gui:reset_triggers
 
 # Set the tick delay between old gui teleports here
