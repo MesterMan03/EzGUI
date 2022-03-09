@@ -1,11 +1,21 @@
 function gui:tellraw_line
-tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "1.2","color": "green"},"\n"]
+tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "1.3","color": "green"},"\n"]
+
+#1.3
+tellraw @s {"text": "1.3","color": "gold"}
+tellraw @s ["- ",{"text": "Even more optimizations:","color": "dark_green"}," ",{"text": "optimized the tick function by another 10 commands!","color": "gray"}]
+tellraw @s ["- ",{"text": "Bug fixes:","color": "dark_green"}," ",{"text": "fixed a nasty bug I'm too embarrased to tell.","color": "gray"}]
+tellraw @s ["- ",{"text": "Added \"any\" clicks:","color": "dark_green"}," ",{"text": "they fire when... uhm.. when a player does anything really...","color": "gray"}]
+tellraw @s ["- ",{"text": "Added F clicks:","color": "dark_green"}," ",{"text": "they fire when a player presses the \"F\" button on an item (essentially swapping the item to their offhand slot.","color": "gray"}]
+tellraw @s ["- ",{"text": "Warning: the item from the player's offhand does get deleted, but because of a weird Minecraft bug, the item stays there.","color": "red","extra": [" ",{"text": "Note however, that this is a completely visual bug, and just \"overwriting\" the offhand slot with a different item makes the ghost item go away.","underlined": true}]}]
+
+tellraw @s ""
 
 #1.2
 tellraw @s {"text": "1.2","color": "gold"}
 tellraw @s ["- ",{"text": "Added drop clicks:","color": "dark_green"}," ",{"text": "they fire when the player throws out either one item or the whole stack.","color": "gray"}]
 tellraw @s ["- ",{"text": "Completely rewrote the click detection functions:","color": "dark_green"}," ",{"text": "the logic is still somewhat the same, but it's way, WAY more optimized now!","color": "gray"}]
-tellraw @s ["- ",{"text": "Lot of bug fixes:","color": "dark_green"}," ",{"text": "you don't have to think about big bugs, JUST LITERALLY A DEBUG FUNCTION THAT I LEFT IN THE CODE... (plus other good stuff :p)","color": "gray"}]
+tellraw @s ["- ",{"text": "Lot of bug fixes:","color": "dark_green"}," ",{"text": "you don't have to think about big bugs, just literally a debug function I left in the code... (plus other good stuff :p)","color": "gray"}]
 
 tellraw @s ""
 

@@ -13,3 +13,5 @@ scoreboard players reset @a dropclickclick
 scoreboard players enable @a[tag=editoropen] dropclickclick
 scoreboard players reset @a anyclick
 scoreboard players enable @a[tag=editoropen] anyclick
+scoreboard players reset @a fclick
+scoreboard players enable @a[tag=editoropen] fclick

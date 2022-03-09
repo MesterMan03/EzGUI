@@ -15,6 +15,7 @@ execute if score @s shiftclick matches 1.. store result entity @e[tag=temp,limit
 execute if score @s returnclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.returnclick int 1 run scoreboard players get @s returnclick
 execute if score @s dropclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.dropclick int 1 run scoreboard players get @s dropclick
 execute if score @s dropstackclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.dropstackclick int 1 run scoreboard players get @s dropstackclick
+execute if score @s fclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.fclick int 1 run scoreboard players get @s fclick
 
 # for anyclick
 execute if score @s anyclick matches 1.. run function gui:editor/set_anyclick

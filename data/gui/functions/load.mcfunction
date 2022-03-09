@@ -13,6 +13,7 @@ scoreboard objectives add returnclick trigger
 scoreboard objectives add dropclick trigger
 scoreboard objectives add dropstackclick trigger
 scoreboard objectives add anyclick trigger
+scoreboard objectives add fclick trigger
 
 function gui:reset_scores_tags
 function gui:reset_triggers

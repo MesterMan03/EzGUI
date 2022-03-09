@@ -17,3 +17,5 @@ execute if score #TEST_MODE constant matches 1 run function gui:item/run_command
 # Stop click detection from continuing
 data remove storage gui:pages ActualItem
 kill @e[tag=itemcheck]
+
+scoreboard players set #command_to_run constant 0

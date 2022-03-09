@@ -9,6 +9,9 @@ execute store success score #changed_slot constant run data modify storage gui:p
 execute if score #changed_slot constant matches 1 positioned ~ ~1.31 ~ run tag @e[type=item,distance=..01,limit=1,nbt={Item:{tag:{GUIItem:1b}}}] add threwitem
 execute if entity @e[tag=threwitem] run function gui:item/threw_item
 
+# with the same thing, check for f clicks
+execute if score #changed_slot constant matches 1 unless data storage gui:pages SlotItem if data entity @s Inventory[{Slot:-106b}].tag.GUIItem run function gui:item/clicks/f_click
+
 # if ActualItem still exists (which would get removed by threw or return click), we continue with the click detection
 execute if data storage gui:pages ActualItem run function gui:item/check_clicks_basic
 
