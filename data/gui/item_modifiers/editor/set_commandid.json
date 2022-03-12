@@ -1,0 +1,14 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "storage",
+        "source": "gui:editor"
+    },
+    "ops": [
+        {
+            "source": "commandid",
+            "target": "gui",
+            "op": "merge"
+        }
+    ]
+}

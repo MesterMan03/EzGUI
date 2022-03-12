@@ -9,7 +9,7 @@ scoreboard players set @a openeditor 0
 execute at @e[tag=editormarker] run particle end_rod ~ ~ ~ 0 -0.1 0 0 1
 
 # Give the GUIItem nbt
-execute as @a[tag=editoropen] at @s if data entity @s SelectedItem unless data entity @s SelectedItem.tag.GUIItem run function gui:editor/give_guiitem
+execute as @a[tag=editoropen] at @s if data entity @s SelectedItem unless data entity @s SelectedItem.tag.GUIItem run item modify entity @s weapon.mainhand gui:editor/set_guiitem
 
 # Check for setting the command id
 # - Run the actual function

@@ -5,11 +5,10 @@
         "predicate": {
             "player": {
                 "looking_at": {
-                    "type": "minecraft:armor_stand",
                     "nbt": "{Tags:[\"base\"]}",
                     "distance": {
                         "absolute": {
-                            "max": 3.2,
+                            "max": 4,
                             "min": 0.1
                         }
                     }

@@ -2,7 +2,7 @@
 
 # Find the gui
 execute store result score #temp constant run scoreboard players get @s openedGUIid
-execute as @e[type=chest_minecart,tag=gui,tag=openedGUI] if score @s id = #temp constant run tag @s add closingGUI
+execute as @e[tag=gui,tag=openedGUI] if score @s id = #temp constant run tag @s add closingGUI
 
 # Kill the gui
 execute as @e[tag=closingGUI] run function gui:gui/guiinteraction/close_clear
