@@ -37,6 +37,12 @@
             "condition": "entity_scores",
             "entity": "this",
             "scores": {
+                "returnclick": -1
+            }
+        }, {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
                 "dropclick": {
                     "min": 1
                 }

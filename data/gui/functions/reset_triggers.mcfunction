@@ -9,8 +9,8 @@ scoreboard players reset @a returnclick
 scoreboard players enable @a[tag=editoropen] returnclick
 scoreboard players reset @a dropclick
 scoreboard players enable @a[tag=editoropen] dropclick
-scoreboard players reset @a dropclickclick
-scoreboard players enable @a[tag=editoropen] dropclickclick
+scoreboard players reset @a dropstackclick
+scoreboard players enable @a[tag=editoropen] dropstackclick
 scoreboard players reset @a anyclick
 scoreboard players enable @a[tag=editoropen] anyclick
 scoreboard players reset @a fclick

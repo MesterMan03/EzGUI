@@ -1,7 +1,7 @@
 file_name = "reset_triggers.mcfunction"
 file = open(file_name,"w")
 
-click_types = ["left", "right", "shift", "return", "drop", "dropclick", "any", "f"]
+click_types = ["left", "right", "shift", "return", "drop", "dropstack", "any", "f"]
 
 base = """\nscoreboard players reset @a `click
 scoreboard players enable @a[tag=editoropen] `click"""

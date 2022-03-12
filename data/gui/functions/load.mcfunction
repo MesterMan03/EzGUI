@@ -5,6 +5,8 @@ scoreboard objectives add openedGUIid dummy
 scoreboard objectives add guiType dummy
 scoreboard objectives add guiPage dummy
 
+scoreboard objectives add hitdelay dummy
+
 scoreboard objectives add openeditor trigger
 scoreboard objectives add leftclick trigger
 scoreboard objectives add rightclick trigger
@@ -26,6 +28,8 @@ team modify nopush collisionRule never
 
 kill @e[tag=raycast]
 kill @e[tag=editormarker]
+
+execute as @e[tag=gui] run function gui:gui/guiinteraction/close_clear
 
 execute at @e[tag=editorchest] if block ~ ~ ~ chest if data block ~ ~ ~ CustomName run setblock ~ ~ ~ air
 kill @e[tag=editorchest]

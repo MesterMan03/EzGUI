@@ -6,6 +6,8 @@
 
 # Basic command: execute if score #command_to_run constant matches x run **anything you want here**
 
+execute if score #DEBUG_MODE constant matches 1 run say run command active
+
 # check if #command_to_run is 0 (happens only when the item has anyclick enabled)
 execute if score #command_to_run constant matches 0 store result score #command_to_run constant run data get storage gui:pages ActualItem.tag.gui.anyclick
 execute if score #command_to_run constant matches 0 if score #DEBUG_MODE constant matches 1 run tellraw @a {"text": "No command ids set for this click type","color": "red"}

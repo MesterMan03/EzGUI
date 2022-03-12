@@ -7,10 +7,9 @@ scoreboard players reset @a rightclick
 scoreboard players reset @a shiftclick
 
 scoreboard players set #curr_id id 0
-
 scoreboard players set #can_check_clicks constant 0
 
-tag @e remove openedGUI
-tag @e remove ready
+scoreboard players set @a hitdelay 0
 
+tag @e remove openedGUI
 tag @a remove editoropen

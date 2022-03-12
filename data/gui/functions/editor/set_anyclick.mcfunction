@@ -1,5 +1,3 @@
-#declare entity @e[tag=temp,limit=1]
-
 # completely delete every other click
 data remove entity @e[tag=temp,limit=1] Item.tag.gui
 

@@ -17,6 +17,9 @@ execute if score @s dropclick matches 1.. store result entity @e[tag=temp,limit=
 execute if score @s dropstackclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.dropstackclick int 1 run scoreboard players get @s dropstackclick
 execute if score @s fclick matches 1.. store result entity @e[tag=temp,limit=1] Item.tag.gui.fclick int 1 run scoreboard players get @s fclick
 
+# special commands
+execute if score @s returnclick matches -1 run function gui:editor/toggle_stealitem
+
 # for anyclick
 execute if score @s anyclick matches 1.. run function gui:editor/set_anyclick
 
