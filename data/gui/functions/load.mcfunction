@@ -22,13 +22,9 @@ data merge storage gui:editor {Void:{}}
 function gui:reset_scores_tags
 function gui:reset_triggers
 
-# Set the tick delay between old gui teleports here
-scoreboard players set #teleport_delay constant 3
-
 team add nopush
 team modify nopush collisionRule never
 
-kill @e[tag=raycast]
 kill @e[tag=editormarker]
 
 execute as @e[tag=gui] run function gui:gui/guiinteraction/close_clear

@@ -40,6 +40,7 @@ tellraw @s {"text": "2.0 Welcome, items","color": "gold"}
 tellraw @s ["- ",{"text": "Added item guis:","color": "dark_green"}," ",{"translate": "these are guis which can be accessed by right clicking with a special item. To get yourself one of these items, give yourself an item with the %s NBT tag, where X is the type of gui you want the item to show.","color": "gray","with":[{"text": "{gui:{guitype:X}}","color": "aqua","clickEvent": {"action": "suggest_command","value": "/give @s stone{gui:{guitype:X}}"}}]}]
 tellraw @s ["- ",{"text": "Completely rewrote the gui mechanics:","color": "dark_green"}," ",{"text": "because of the impostor detection, I finally got rid of some buggy mechanics, which means not only the datapack is more optimized, but it's also a lot snappier. Also, now you aren't limited to only armor stands when it comes to bases. Use anything you want, villagers, pigs, even other players?!","color": "gray"}]
 tellraw @s ["- ",{"text": "Rewrote the editor mechanics:","color": "dark_green"}," ",{"text": "setting command ids now use item modifiers, which makes and it a a lot snappier and easier to use. Also, the editor will now warn you when you try to set right or drop click to an item that's not compatible with them.","color": "gray"}]
-tellraw @s ["- ",{"text": "Optimizations + bug fixes:","color": "dark_green"}]
+tellraw @s ["- ",{"text": "Optimizations + bug fixes","color": "dark_green"}]
+tellraw @s ["- ",{"text": "Added hitdelay:","color": "dark_green"}," ",{"text": "when a player gets hit, he won't be able to open guis for 15 ticks. This is useful for maps where PvP is also present.","color": "gray"}]
 
 function gui:tellraw_line
