@@ -17,9 +17,6 @@ execute as @e[tag=itemgui] at @s positioned ~ ~-1 ~ unless entity @a[distance=..
 # ---------------------------------
 # commands for base guis
 
-# Check for newly placed bases
-execute as @e[type=armor_stand,tag=base] unless score @s id matches -2147483648..2147483647 run function gui:generatenewid
-
 # Check if player looks at base
 tag @a remove seesbase
 execute as @a[gamemode=!spectator,tag=!holdsguispawner,scores={hitdelay=..0}] at @s if predicate gui:seesbase run tag @s add seesbase

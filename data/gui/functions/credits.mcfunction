@@ -1,5 +1,5 @@
 function gui:tellraw_line
-tellraw @s {"text": "A giant Thank You for all these following people:","color": "green"}
+tellraw @s {"text": "A giant Thank You for all these people:","color": "green"}
 
 tellraw @s ""
 

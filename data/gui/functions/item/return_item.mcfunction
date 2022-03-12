@@ -1,5 +1,6 @@
 # Create a new item
-execute unless data storage gui:pages ActualItem.tag.gui.stealitem run summon item ~ ~ ~ {Tags:["temp","returnitem"],Item:{id:"minecraft:stone",Count:1b},PickupDelay:0s}
+execute store result score #temp constant run data get storage gui:pages ActualItem.tag.gui.stealitem
+execute unless score #temp constant matches 1 run summon item ~ ~ ~ {Tags:["temp","returnitem"],Item:{id:"minecraft:stone",Count:1b},PickupDelay:0s}
 
 # Copy metadata from SlotItem
 data modify entity @e[tag=temp,limit=1] Item set from storage gui:pages SlotItem

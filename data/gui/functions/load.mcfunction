@@ -17,6 +17,8 @@ scoreboard objectives add dropstackclick trigger
 scoreboard objectives add anyclick trigger
 scoreboard objectives add fclick trigger
 
+data merge storage gui:editor {Void:{}}
+
 function gui:reset_scores_tags
 function gui:reset_triggers
 
