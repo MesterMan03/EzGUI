@@ -42,5 +42,6 @@ tellraw @s ["- ",{"text": "Completely rewrote the gui mechanics:","color": "dark
 tellraw @s ["- ",{"text": "Rewrote the editor mechanics:","color": "dark_green"}," ",{"text": "setting command ids now use item modifiers, which makes and it a a lot snappier and easier to use. Also, the editor will now warn you when you try to set right or drop click to an item that's not compatible with them.","color": "gray"}]
 tellraw @s ["- ",{"text": "Optimizations + bug fixes","color": "dark_green"}]
 tellraw @s ["- ",{"text": "Added hitdelay:","color": "dark_green"}," ",{"text": "when a player gets hit, he won't be able to open guis for 15 ticks. This is useful for maps where PvP is also present.","color": "gray"}]
+tellraw @s ["- ",{"text": "Added stealitem:","color": "dark_green"}," ",{"text": "this is available for return clicks. When enabled, the player won't get back his item. To enable it, simple hold an item while in the editor and set returnclick to -1","color": "gray"}]
 
 function gui:tellraw_line
