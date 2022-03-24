@@ -1,5 +1,5 @@
 function gui:tellraw_line
-tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "2.0 Welcome, items","color": "green"},"\n"]
+tellraw @s [{"text": "Current version:","color": "aqua"}," ",{"text": "2.0.1","color": "green"},"\n"]
 
 #1.1
 tellraw @s {"text": "1.1","color": "gold"}
@@ -42,6 +42,13 @@ tellraw @s ["- ",{"text": "Completely rewrote the gui mechanics:","color": "dark
 tellraw @s ["- ",{"text": "Rewrote the editor mechanics:","color": "dark_green"}," ",{"text": "setting command ids now use item modifiers, which makes and it a a lot snappier and easier to use. Also, the editor will now warn you when you try to set right or drop click to an item that's not compatible with them.","color": "gray"}]
 tellraw @s ["- ",{"text": "Optimizations + bug fixes","color": "dark_green"}]
 tellraw @s ["- ",{"text": "Added hitdelay:","color": "dark_green"}," ",{"text": "when a player gets hit, he won't be able to open guis for 15 ticks. This is useful for maps where PvP is also present.","color": "gray"}]
-tellraw @s ["- ",{"text": "Added stealitem:","color": "dark_green"}," ",{"text": "this is available for return clicks. When enabled, the player won't get back his item. To enable it, simple hold an item while in the editor and set returnclick to -1","color": "gray"}]
+tellraw @s ["- ",{"text": "Added stealitem:","color": "dark_green"}," ",{"text": "this is available for return clicks. When enabled, the players  won't get back their item. To enable it, simply hold an item while in the editor and set returnclick to -1","color": "gray"}]
+
+tellraw @s ""
+
+#2.0.1
+tellraw @s {"text": "2.0.1","color": "gold"}
+tellraw @s ["- ",{"text": "Technical changes:","color": "dark_green"}," ",{"text": "players now get a selectedplayer tag while their GUI is being refreshed which can be used to easily access the player inside the load_items function","color": "gray"}]
+tellraw @s ["- ",{"text": "Small optimization:","color": "dark_green"}," ",{"text": "GUIs now only refresh their contents when the player has clicked on something, which can lead to some performance boosts especially when load_items is big","color": "gray"}]
 
 function gui:tellraw_line
