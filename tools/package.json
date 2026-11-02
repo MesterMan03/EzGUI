@@ -1,0 +1,18 @@
+{
+  "name": "ezgui-guigen",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "EzGUI 3.0 datapack generator \u2014 turns menu JSON into an optimized Minecraft 1.21.1 datapack",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "gen": "tsx src/cli.ts",
+    "test": "tsx test/run.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
