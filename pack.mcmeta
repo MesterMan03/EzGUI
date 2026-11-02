@@ -1,6 +1,10 @@
 {
-    "pack": {
-        "pack_format": 9,
-        "description": "it's just a GUI"
-    }
+  "pack": {
+    "description": "EzGUI 3.0 — data driven GUI engine for Minecraft 1.21.1",
+    "pack_format": 48,
+    "supported_formats": [
+      48,
+      57
+    ]
+  }
 }

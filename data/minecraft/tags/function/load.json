@@ -1,0 +1,7 @@
+{
+  "values": [
+    "ezgui:core/load",
+    "ezgui:menu/defs",
+    "ezgui:gen/objectives"
+  ]
+}
